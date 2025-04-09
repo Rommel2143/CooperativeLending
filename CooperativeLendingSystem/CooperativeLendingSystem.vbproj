@@ -164,16 +164,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="administrator\update_user.Designer.vb">
+      <DependentUpon>update_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\update_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="member\add_member.Designer.vb">
       <DependentUpon>add_member.vb</DependentUpon>
     </Compile>
     <Compile Include="member\add_member.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="add_user.Designer.vb">
+    <Compile Include="administrator\add_user.Designer.vb">
       <DependentUpon>add_user.vb</DependentUpon>
     </Compile>
-    <Compile Include="add_user.vb">
+    <Compile Include="administrator\add_user.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="member\member_accounts.designer.vb">
@@ -203,6 +209,7 @@
     <Compile Include="main\Mainframe.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="modules\savingsModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -227,12 +234,21 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modules\userModules.vb" />
+    <Compile Include="savings\savings.designer.vb">
+      <DependentUpon>savings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="savings\savings.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="administrator\update_user.resx">
+      <DependentUpon>update_user.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="member\add_member.resx">
       <DependentUpon>add_member.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="add_user.resx">
+    <EmbeddedResource Include="administrator\add_user.resx">
       <DependentUpon>add_user.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main\Login.resx">
@@ -256,6 +272,9 @@
     <EmbeddedResource Include="main\subframe.resx">
       <DependentUpon>subframe.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="savings\savings.resx">
+      <DependentUpon>savings.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -272,6 +291,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <None Include="Resources\print.png" />
     <None Include="Resources\user %289%29.png" />
     <None Include="Resources\len.png" />
     <None Include="Resources\photo.png" />

@@ -51,6 +51,10 @@ Public Class member_options
 
     End Sub
 
+    Private Sub Guna2TileButton2_Click(sender As Object, e As EventArgs) Handles Guna2TileButton2.Click
+        display_inSub(savings)
+    End Sub
+
     'Private Sub Guna2TileButton3_Click(sender As Object, e As EventArgs) Handles Guna2TileButton3.Click
     '    If isAccess("sharecap") = True Then
     '        Dim sc As New sharecap_collection

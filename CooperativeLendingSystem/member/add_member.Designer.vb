@@ -59,6 +59,7 @@ Partial Class add_member
         Me.Label9 = New System.Windows.Forms.Label()
         Me.pic_user = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Label17 = New System.Windows.Forms.Label()
         CType(Me.pic_user, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -76,6 +77,7 @@ Partial Class add_member
         '
         'txt_birthplace
         '
+        Me.txt_birthplace.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_birthplace.BorderRadius = 3
         Me.txt_birthplace.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_birthplace.DefaultText = ""
@@ -109,6 +111,7 @@ Partial Class add_member
         'cmb_gender
         '
         Me.cmb_gender.BackColor = System.Drawing.Color.Transparent
+        Me.cmb_gender.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.cmb_gender.BorderRadius = 3
         Me.cmb_gender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmb_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -180,6 +183,7 @@ Partial Class add_member
         '
         'txt_account
         '
+        Me.txt_account.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_account.BorderRadius = 3
         Me.txt_account.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_account.DefaultText = ""
@@ -213,6 +217,7 @@ Partial Class add_member
         '
         'txt_lastname
         '
+        Me.txt_lastname.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_lastname.BorderRadius = 3
         Me.txt_lastname.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_lastname.DefaultText = ""
@@ -245,6 +250,7 @@ Partial Class add_member
         '
         'txt_midlename
         '
+        Me.txt_midlename.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_midlename.BorderRadius = 3
         Me.txt_midlename.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_midlename.DefaultText = ""
@@ -277,6 +283,7 @@ Partial Class add_member
         '
         'txt_firstname
         '
+        Me.txt_firstname.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_firstname.BorderRadius = 3
         Me.txt_firstname.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_firstname.DefaultText = ""
@@ -298,6 +305,7 @@ Partial Class add_member
         'cmb_civil
         '
         Me.cmb_civil.BackColor = System.Drawing.Color.Transparent
+        Me.cmb_civil.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.cmb_civil.BorderRadius = 3
         Me.cmb_civil.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmb_civil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -326,6 +334,7 @@ Partial Class add_member
         '
         'txt_contact2
         '
+        Me.txt_contact2.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_contact2.BorderRadius = 3
         Me.txt_contact2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_contact2.DefaultText = ""
@@ -358,6 +367,7 @@ Partial Class add_member
         '
         'txt_email
         '
+        Me.txt_email.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_email.BorderRadius = 3
         Me.txt_email.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_email.DefaultText = ""
@@ -390,6 +400,7 @@ Partial Class add_member
         '
         'txt_contact1
         '
+        Me.txt_contact1.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_contact1.BorderRadius = 3
         Me.txt_contact1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_contact1.DefaultText = ""
@@ -422,6 +433,7 @@ Partial Class add_member
         '
         'txt_presentadd
         '
+        Me.txt_presentadd.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_presentadd.BorderRadius = 3
         Me.txt_presentadd.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_presentadd.DefaultText = ""
@@ -454,6 +466,7 @@ Partial Class add_member
         '
         'txt_id
         '
+        Me.txt_id.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.txt_id.BorderRadius = 3
         Me.txt_id.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_id.DefaultText = ""
@@ -487,6 +500,7 @@ Partial Class add_member
         'cmb_idtype
         '
         Me.cmb_idtype.BackColor = System.Drawing.Color.Transparent
+        Me.cmb_idtype.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.cmb_idtype.BorderRadius = 3
         Me.cmb_idtype.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmb_idtype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -516,6 +530,7 @@ Partial Class add_member
         'cmb_empstatus
         '
         Me.cmb_empstatus.BackColor = System.Drawing.Color.Transparent
+        Me.cmb_empstatus.BorderColor = System.Drawing.SystemColors.ButtonShadow
         Me.cmb_empstatus.BorderRadius = 3
         Me.cmb_empstatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmb_empstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -532,7 +547,9 @@ Partial Class add_member
         '
         'btn_submit
         '
+        Me.btn_submit.BorderColor = System.Drawing.Color.DarkGray
         Me.btn_submit.BorderRadius = 3
+        Me.btn_submit.BorderThickness = 1
         Me.btn_submit.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.btn_submit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btn_submit.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -552,7 +569,9 @@ Partial Class add_member
         '
         Me.upload_pic.Animated = True
         Me.upload_pic.BackColor = System.Drawing.Color.Transparent
+        Me.upload_pic.BorderColor = System.Drawing.Color.DarkGray
         Me.upload_pic.BorderRadius = 3
+        Me.upload_pic.BorderThickness = 1
         Me.upload_pic.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.upload_pic.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.upload_pic.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -577,7 +596,9 @@ Partial Class add_member
         '
         Me.open_cam.Animated = True
         Me.open_cam.BackColor = System.Drawing.Color.Transparent
+        Me.open_cam.BorderColor = System.Drawing.Color.DarkGray
         Me.open_cam.BorderRadius = 3
+        Me.open_cam.BorderThickness = 1
         Me.open_cam.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.open_cam.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.open_cam.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -612,7 +633,8 @@ Partial Class add_member
         '
         'pic_user
         '
-        Me.pic_user.BackColor = System.Drawing.Color.White
+        Me.pic_user.BackColor = System.Drawing.Color.Transparent
+        Me.pic_user.BorderRadius = 3
         Me.pic_user.ImageRotate = 0!
         Me.pic_user.Location = New System.Drawing.Point(66, 752)
         Me.pic_user.Name = "pic_user"
@@ -643,13 +665,26 @@ Partial Class add_member
         Me.Guna2Button1.TabIndex = 95
         Me.Guna2Button1.Text = "Copy PoB"
         '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.DimGray
+        Me.Label17.Location = New System.Drawing.Point(32, 25)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(178, 30)
+        Me.Label17.TabIndex = 96
+        Me.Label17.Text = "Add new member"
+        '
         'add_member
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoScrollMargin = New System.Drawing.Size(0, 50)
-        Me.ClientSize = New System.Drawing.Size(1195, 748)
+        Me.ClientSize = New System.Drawing.Size(948, 748)
+        Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.upload_pic)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.open_cam)
@@ -732,4 +767,5 @@ Partial Class add_member
     Friend WithEvents Label9 As Label
     Friend WithEvents pic_user As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Label17 As Label
 End Class

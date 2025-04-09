@@ -51,4 +51,16 @@
     Private Sub AccountsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AccountsToolStripMenuItem.Click
         display_inSub(member_accounts)
     End Sub
+
+    Private Sub btn_administrator_Click(sender As Object, e As EventArgs) Handles btn_administrator.Click
+
+    End Sub
+
+    Private Sub AddUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddUserToolStripMenuItem.Click
+        display_inSub(add_user)
+    End Sub
+
+    Private Sub UpdateUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UpdateUserToolStripMenuItem.Click
+        display_inSub(update_user)
+    End Sub
 End Class
