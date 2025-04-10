@@ -31,7 +31,10 @@ Partial Class savings
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.datagrid1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.export_excel = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbl_acc = New System.Windows.Forms.Label()
         Me.lbl_accountname = New System.Windows.Forms.Label()
         Me.lbl_balance = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
@@ -52,6 +55,7 @@ Partial Class savings
         Me.TabPage1.SuspendLayout()
         CType(Me.datagrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
@@ -170,41 +174,87 @@ Partial Class savings
         '
         'Guna2Panel1
         '
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button3)
-        Me.Guna2Panel1.Controls.Add(Me.lbl_accountname)
-        Me.Guna2Panel1.Controls.Add(Me.lbl_balance)
+        Me.Guna2Panel1.Controls.Add(Me.export_excel)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2Panel1.FillColor = System.Drawing.Color.White
         Me.Guna2Panel1.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(858, 166)
         Me.Guna2Panel1.TabIndex = 3
         '
-        'Guna2Button3
+        'export_excel
         '
-        Me.Guna2Button3.BorderRadius = 3
-        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button3.FillColor = System.Drawing.Color.DarkSlateBlue
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Image = CType(resources.GetObject("Guna2Button3.Image"), System.Drawing.Image)
-        Me.Guna2Button3.Location = New System.Drawing.Point(16, 120)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(119, 40)
-        Me.Guna2Button3.TabIndex = 5
-        Me.Guna2Button3.Text = "Export to excel"
+        Me.export_excel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.export_excel.BorderColor = System.Drawing.Color.Green
+        Me.export_excel.BorderRadius = 3
+        Me.export_excel.BorderThickness = 1
+        Me.export_excel.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.export_excel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.export_excel.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.export_excel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.export_excel.FillColor = System.Drawing.Color.Transparent
+        Me.export_excel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.export_excel.ForeColor = System.Drawing.Color.Green
+        Me.export_excel.Image = CType(resources.GetObject("export_excel.Image"), System.Drawing.Image)
+        Me.export_excel.Location = New System.Drawing.Point(747, 124)
+        Me.export_excel.Name = "export_excel"
+        Me.export_excel.Size = New System.Drawing.Size(92, 36)
+        Me.export_excel.TabIndex = 87
+        Me.export_excel.Text = "Export"
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Guna2Panel2.BorderRadius = 5
+        Me.Guna2Panel2.BorderThickness = 1
+        Me.Guna2Panel2.Controls.Add(Me.Label5)
+        Me.Guna2Panel2.Controls.Add(Me.lbl_acc)
+        Me.Guna2Panel2.Controls.Add(Me.lbl_accountname)
+        Me.Guna2Panel2.Controls.Add(Me.lbl_balance)
+        Me.Guna2Panel2.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel2.Location = New System.Drawing.Point(15, 17)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.ShadowDecoration.BorderRadius = 7
+        Me.Guna2Panel2.ShadowDecoration.Color = System.Drawing.Color.Silver
+        Me.Guna2Panel2.ShadowDecoration.Enabled = True
+        Me.Guna2Panel2.Size = New System.Drawing.Size(329, 103)
+        Me.Guna2Panel2.TabIndex = 6
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label5.Location = New System.Drawing.Point(15, 60)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(71, 21)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Savings :"
+        '
+        'lbl_acc
+        '
+        Me.lbl_acc.AutoSize = True
+        Me.lbl_acc.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_acc.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_acc.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_acc.Location = New System.Drawing.Point(15, 39)
+        Me.lbl_acc.Name = "lbl_acc"
+        Me.lbl_acc.Size = New System.Drawing.Size(88, 21)
+        Me.lbl_acc.TabIndex = 2
+        Me.lbl_acc.Text = "Account no"
         '
         'lbl_accountname
         '
         Me.lbl_accountname.AutoSize = True
         Me.lbl_accountname.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_accountname.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_accountname.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_accountname.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lbl_accountname.Location = New System.Drawing.Point(28, 26)
+        Me.lbl_accountname.Location = New System.Drawing.Point(13, 9)
         Me.lbl_accountname.Name = "lbl_accountname"
-        Me.lbl_accountname.Size = New System.Drawing.Size(107, 20)
+        Me.lbl_accountname.Size = New System.Drawing.Size(148, 30)
         Me.lbl_accountname.TabIndex = 1
         Me.lbl_accountname.Text = "Account name"
         '
@@ -212,11 +262,11 @@ Partial Class savings
         '
         Me.lbl_balance.AutoSize = True
         Me.lbl_balance.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_balance.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_balance.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_balance.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lbl_balance.Location = New System.Drawing.Point(28, 51)
+        Me.lbl_balance.Location = New System.Drawing.Point(81, 60)
         Me.lbl_balance.Name = "lbl_balance"
-        Me.lbl_balance.Size = New System.Drawing.Size(78, 25)
+        Me.lbl_balance.Size = New System.Drawing.Size(64, 21)
         Me.lbl_balance.TabIndex = 0
         Me.lbl_balance.Text = "000000"
         '
@@ -238,6 +288,8 @@ Partial Class savings
         'cmb_deptrans
         '
         Me.cmb_deptrans.BackColor = System.Drawing.Color.Transparent
+        Me.cmb_deptrans.BorderColor = System.Drawing.Color.Black
+        Me.cmb_deptrans.BorderRadius = 3
         Me.cmb_deptrans.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmb_deptrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_deptrans.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -266,6 +318,8 @@ Partial Class savings
         '
         'Guna2Button1
         '
+        Me.Guna2Button1.BorderRadius = 3
+        Me.Guna2Button1.BorderThickness = 1
         Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -281,6 +335,8 @@ Partial Class savings
         '
         'txt_amountdeposit
         '
+        Me.txt_amountdeposit.BorderColor = System.Drawing.Color.Black
+        Me.txt_amountdeposit.BorderRadius = 3
         Me.txt_amountdeposit.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_amountdeposit.DefaultText = ""
         Me.txt_amountdeposit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -293,7 +349,6 @@ Partial Class savings
         Me.txt_amountdeposit.Location = New System.Drawing.Point(46, 71)
         Me.txt_amountdeposit.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt_amountdeposit.Name = "txt_amountdeposit"
-        Me.txt_amountdeposit.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_amountdeposit.PlaceholderText = ""
         Me.txt_amountdeposit.SelectedText = ""
         Me.txt_amountdeposit.Size = New System.Drawing.Size(270, 38)
@@ -312,6 +367,8 @@ Partial Class savings
         '
         'txt_password
         '
+        Me.txt_password.BorderColor = System.Drawing.Color.Black
+        Me.txt_password.BorderRadius = 3
         Me.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_password.DefaultText = ""
         Me.txt_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -364,6 +421,8 @@ Partial Class savings
         'cmb_withtrans
         '
         Me.cmb_withtrans.BackColor = System.Drawing.Color.Transparent
+        Me.cmb_withtrans.BorderColor = System.Drawing.Color.Black
+        Me.cmb_withtrans.BorderRadius = 3
         Me.cmb_withtrans.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cmb_withtrans.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_withtrans.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -380,6 +439,8 @@ Partial Class savings
         '
         'btn_withdraw
         '
+        Me.btn_withdraw.BorderRadius = 3
+        Me.btn_withdraw.BorderThickness = 1
         Me.btn_withdraw.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.btn_withdraw.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btn_withdraw.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -395,6 +456,8 @@ Partial Class savings
         '
         'txt_amountwithdraw
         '
+        Me.txt_amountwithdraw.BorderColor = System.Drawing.Color.Black
+        Me.txt_amountwithdraw.BorderRadius = 3
         Me.txt_amountwithdraw.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_amountwithdraw.DefaultText = ""
         Me.txt_amountwithdraw.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -407,7 +470,6 @@ Partial Class savings
         Me.txt_amountwithdraw.Location = New System.Drawing.Point(46, 71)
         Me.txt_amountwithdraw.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txt_amountwithdraw.Name = "txt_amountwithdraw"
-        Me.txt_amountwithdraw.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txt_amountwithdraw.PlaceholderText = ""
         Me.txt_amountwithdraw.SelectedText = ""
         Me.txt_amountwithdraw.Size = New System.Drawing.Size(270, 38)
@@ -426,6 +488,8 @@ Partial Class savings
         '
         'txt_passwithdraw
         '
+        Me.txt_passwithdraw.BorderColor = System.Drawing.Color.Black
+        Me.txt_passwithdraw.BorderRadius = 3
         Me.txt_passwithdraw.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txt_passwithdraw.DefaultText = ""
         Me.txt_passwithdraw.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -461,7 +525,8 @@ Partial Class savings
         Me.TabPage1.ResumeLayout(False)
         CType(Me.datagrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel1.ResumeLayout(False)
-        Me.Guna2Panel1.PerformLayout()
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
@@ -490,5 +555,8 @@ Partial Class savings
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents cmb_withtrans As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents lbl_acc As Label
+    Friend WithEvents export_excel As Guna.UI2.WinForms.Guna2Button
 End Class

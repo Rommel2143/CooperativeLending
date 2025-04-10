@@ -37,18 +37,13 @@ Public Class member_accounts
         Try
             ' Ensure that a valid row is clicked and the cells contain data
             If e.RowIndex >= 0 AndAlso e.RowIndex < datagrid1.Rows.Count Then
-                Dim accountNo As String = If(datagrid1.Rows(e.RowIndex).Cells("Account no.").Value IsNot Nothing, datagrid1.Rows(e.RowIndex).Cells("Account no.").Value.ToString(), String.Empty)
-                Dim member As String = If(datagrid1.Rows(e.RowIndex).Cells("Fullname").Value IsNot Nothing, datagrid1.Rows(e.RowIndex).Cells("Fullname").Value.ToString(), String.Empty)
+                'Dim accountNo As String = If(datagrid1.Rows(e.RowIndex).Cells("Account no.").Value IsNot Nothing, datagrid1.Rows(e.RowIndex).Cells("Account no.").Value.ToString(), String.Empty)
 
-                ' Check if the values are not empty
-                If Not String.IsNullOrEmpty(accountNo) AndAlso Not String.IsNullOrEmpty(member) Then
-                    Dim options As New member_options
-                    options.load_data(accountNo, member)
-                    options.Show()
-                    options.BringToFront()
-                Else
-                    MessageBox.Show("Error: Account number or Fullname is missing.")
-                End If
+                getClient(datagrid1.Rows(e.RowIndex).Cells("Account no.").Value.ToString())
+
+                member_options.Show()
+                    member_options.BringToFront()
+
             End If
         Catch ex As Exception
             ' Handle any exceptions

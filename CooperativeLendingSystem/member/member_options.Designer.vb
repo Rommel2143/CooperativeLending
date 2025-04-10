@@ -28,12 +28,12 @@ Partial Class member_options
         Me.lbl_fullname = New System.Windows.Forms.Label()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.pic_user = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.lbl_accountno = New System.Windows.Forms.Label()
+        Me.Guna2TileButton4 = New Guna.UI2.WinForms.Guna2TileButton()
         Me.Guna2TileButton3 = New Guna.UI2.WinForms.Guna2TileButton()
         Me.Guna2TileButton2 = New Guna.UI2.WinForms.Guna2TileButton()
         Me.Guna2TileButton1 = New Guna.UI2.WinForms.Guna2TileButton()
-        Me.Guna2TileButton4 = New Guna.UI2.WinForms.Guna2TileButton()
+        Me.pic_user = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.pic_user, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,11 +49,11 @@ Partial Class member_options
         '
         Me.lbl_fullname.AutoSize = True
         Me.lbl_fullname.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_fullname.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_fullname.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_fullname.ForeColor = System.Drawing.Color.White
-        Me.lbl_fullname.Location = New System.Drawing.Point(156, 66)
+        Me.lbl_fullname.Location = New System.Drawing.Point(155, 57)
         Me.lbl_fullname.Name = "lbl_fullname"
-        Me.lbl_fullname.Size = New System.Drawing.Size(112, 21)
+        Me.lbl_fullname.Size = New System.Drawing.Size(149, 30)
         Me.lbl_fullname.TabIndex = 89
         Me.lbl_fullname.Text = "Member name"
         Me.lbl_fullname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -86,31 +86,42 @@ Partial Class member_options
         Me.Guna2Panel1.Size = New System.Drawing.Size(685, 153)
         Me.Guna2Panel1.TabIndex = 92
         '
-        'pic_user
-        '
-        Me.pic_user.BackColor = System.Drawing.Color.Transparent
-        Me.pic_user.ImageRotate = 0!
-        Me.pic_user.Location = New System.Drawing.Point(50, 49)
-        Me.pic_user.Name = "pic_user"
-        Me.pic_user.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.pic_user.Size = New System.Drawing.Size(90, 90)
-        Me.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pic_user.TabIndex = 92
-        Me.pic_user.TabStop = False
-        Me.pic_user.UseTransparentBackground = True
-        '
         'lbl_accountno
         '
         Me.lbl_accountno.AutoSize = True
         Me.lbl_accountno.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_accountno.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_accountno.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_accountno.ForeColor = System.Drawing.Color.White
-        Me.lbl_accountno.Location = New System.Drawing.Point(157, 87)
+        Me.lbl_accountno.Location = New System.Drawing.Point(155, 87)
         Me.lbl_accountno.Name = "lbl_accountno"
-        Me.lbl_accountno.Size = New System.Drawing.Size(72, 17)
+        Me.lbl_accountno.Size = New System.Drawing.Size(106, 25)
         Me.lbl_accountno.TabIndex = 91
         Me.lbl_accountno.Text = "account no"
         Me.lbl_accountno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Guna2TileButton4
+        '
+        Me.Guna2TileButton4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2TileButton4.BorderColor = System.Drawing.Color.LightGray
+        Me.Guna2TileButton4.BorderRadius = 5
+        Me.Guna2TileButton4.BorderThickness = 1
+        Me.Guna2TileButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2TileButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2TileButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2TileButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2TileButton4.FillColor = System.Drawing.Color.White
+        Me.Guna2TileButton4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2TileButton4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Guna2TileButton4.Image = CType(resources.GetObject("Guna2TileButton4.Image"), System.Drawing.Image)
+        Me.Guna2TileButton4.ImageSize = New System.Drawing.Size(40, 40)
+        Me.Guna2TileButton4.Location = New System.Drawing.Point(506, 208)
+        Me.Guna2TileButton4.Name = "Guna2TileButton4"
+        Me.Guna2TileButton4.ShadowDecoration.Color = System.Drawing.Color.Silver
+        Me.Guna2TileButton4.ShadowDecoration.Enabled = True
+        Me.Guna2TileButton4.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(2, 2, 4, 4)
+        Me.Guna2TileButton4.Size = New System.Drawing.Size(106, 112)
+        Me.Guna2TileButton4.TabIndex = 93
+        Me.Guna2TileButton4.Text = "Apply Loan"
         '
         'Guna2TileButton3
         '
@@ -184,29 +195,18 @@ Partial Class member_options
         Me.Guna2TileButton1.TabIndex = 86
         Me.Guna2TileButton1.Text = "Info"
         '
-        'Guna2TileButton4
+        'pic_user
         '
-        Me.Guna2TileButton4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2TileButton4.BorderColor = System.Drawing.Color.LightGray
-        Me.Guna2TileButton4.BorderRadius = 5
-        Me.Guna2TileButton4.BorderThickness = 1
-        Me.Guna2TileButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2TileButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2TileButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2TileButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2TileButton4.FillColor = System.Drawing.Color.White
-        Me.Guna2TileButton4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2TileButton4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Guna2TileButton4.Image = CType(resources.GetObject("Guna2TileButton4.Image"), System.Drawing.Image)
-        Me.Guna2TileButton4.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2TileButton4.Location = New System.Drawing.Point(506, 208)
-        Me.Guna2TileButton4.Name = "Guna2TileButton4"
-        Me.Guna2TileButton4.ShadowDecoration.Color = System.Drawing.Color.Silver
-        Me.Guna2TileButton4.ShadowDecoration.Enabled = True
-        Me.Guna2TileButton4.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(2, 2, 4, 4)
-        Me.Guna2TileButton4.Size = New System.Drawing.Size(106, 112)
-        Me.Guna2TileButton4.TabIndex = 93
-        Me.Guna2TileButton4.Text = "Apply Loan"
+        Me.pic_user.BackColor = System.Drawing.Color.Transparent
+        Me.pic_user.ImageRotate = 0!
+        Me.pic_user.Location = New System.Drawing.Point(50, 49)
+        Me.pic_user.Name = "pic_user"
+        Me.pic_user.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.pic_user.Size = New System.Drawing.Size(90, 90)
+        Me.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pic_user.TabIndex = 92
+        Me.pic_user.TabStop = False
+        Me.pic_user.UseTransparentBackground = True
         '
         'member_options
         '

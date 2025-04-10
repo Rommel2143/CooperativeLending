@@ -23,17 +23,17 @@ Partial Class member_accounts
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(member_accounts))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(member_accounts))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.export_excel = New Guna.UI2.WinForms.Guna2Button()
+        Me.txt_search = New Guna.UI2.WinForms.Guna2TextBox()
         Me.datagrid1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.export_excel = New Guna.UI2.WinForms.Guna2Button()
-        Me.txt_search = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.datagrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
@@ -49,6 +49,49 @@ Partial Class member_accounts
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(1244, 87)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'export_excel
+        '
+        Me.export_excel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.export_excel.BorderColor = System.Drawing.Color.Green
+        Me.export_excel.BorderRadius = 3
+        Me.export_excel.BorderThickness = 1
+        Me.export_excel.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.export_excel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.export_excel.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.export_excel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.export_excel.FillColor = System.Drawing.Color.Transparent
+        Me.export_excel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.export_excel.ForeColor = System.Drawing.Color.Green
+        Me.export_excel.Image = CType(resources.GetObject("export_excel.Image"), System.Drawing.Image)
+        Me.export_excel.Location = New System.Drawing.Point(1100, 39)
+        Me.export_excel.Name = "export_excel"
+        Me.export_excel.Size = New System.Drawing.Size(92, 36)
+        Me.export_excel.TabIndex = 86
+        Me.export_excel.Text = "Export"
+        '
+        'txt_search
+        '
+        Me.txt_search.AutoRoundedCorners = True
+        Me.txt_search.BackColor = System.Drawing.Color.Transparent
+        Me.txt_search.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_search.DefaultText = ""
+        Me.txt_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_search.Font = New System.Drawing.Font("Segoe UI", 11.25!)
+        Me.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_search.IconLeft = CType(resources.GetObject("txt_search.IconLeft"), System.Drawing.Image)
+        Me.txt_search.IconLeftOffset = New System.Drawing.Point(5, 0)
+        Me.txt_search.Location = New System.Drawing.Point(52, 39)
+        Me.txt_search.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt_search.Name = "txt_search"
+        Me.txt_search.PlaceholderText = "account no. or lastname..."
+        Me.txt_search.SelectedText = ""
+        Me.txt_search.Size = New System.Drawing.Size(377, 36)
+        Me.txt_search.TabIndex = 40
         '
         'datagrid1
         '
@@ -131,49 +174,6 @@ Partial Class member_accounts
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
         Me.EditToolStripMenuItem.Size = New System.Drawing.Size(94, 22)
         Me.EditToolStripMenuItem.Text = "Edit"
-        '
-        'export_excel
-        '
-        Me.export_excel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.export_excel.BorderColor = System.Drawing.Color.Green
-        Me.export_excel.BorderRadius = 3
-        Me.export_excel.BorderThickness = 1
-        Me.export_excel.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.export_excel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.export_excel.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.export_excel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.export_excel.FillColor = System.Drawing.Color.Transparent
-        Me.export_excel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.export_excel.ForeColor = System.Drawing.Color.Green
-        Me.export_excel.Image = CType(resources.GetObject("export_excel.Image"), System.Drawing.Image)
-        Me.export_excel.Location = New System.Drawing.Point(1100, 39)
-        Me.export_excel.Name = "export_excel"
-        Me.export_excel.Size = New System.Drawing.Size(92, 36)
-        Me.export_excel.TabIndex = 86
-        Me.export_excel.Text = "Export"
-        '
-        'txt_search
-        '
-        Me.txt_search.AutoRoundedCorners = True
-        Me.txt_search.BackColor = System.Drawing.Color.Transparent
-        Me.txt_search.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_search.DefaultText = ""
-        Me.txt_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_search.Font = New System.Drawing.Font("Segoe UI", 11.25!)
-        Me.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_search.IconLeft = CType(resources.GetObject("txt_search.IconLeft"), System.Drawing.Image)
-        Me.txt_search.IconLeftOffset = New System.Drawing.Point(5, 0)
-        Me.txt_search.Location = New System.Drawing.Point(52, 39)
-        Me.txt_search.Margin = New System.Windows.Forms.Padding(5)
-        Me.txt_search.Name = "txt_search"
-        Me.txt_search.PlaceholderText = "account no. or lastname..."
-        Me.txt_search.SelectedText = ""
-        Me.txt_search.Size = New System.Drawing.Size(377, 36)
-        Me.txt_search.TabIndex = 40
         '
         'member_accounts
         '

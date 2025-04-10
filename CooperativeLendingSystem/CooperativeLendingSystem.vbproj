@@ -66,6 +66,10 @@
     <Reference Include="ClosedXML.Parser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d5f7376574c51ec, processorArchitecture=MSIL">
       <HintPath>packages\ClosedXML.Parser.1.3.0\lib\netstandard2.0\ClosedXML.Parser.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DocumentFormat.OpenXml, Version=3.3.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
       <HintPath>packages\DocumentFormat.OpenXml.3.3.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
@@ -139,6 +143,7 @@
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -194,6 +199,7 @@
     <Compile Include="member\member_options.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="modules\clients.vb" />
     <Compile Include="modules\dbConnection.vb" />
     <Compile Include="modules\exportExcel.vb" />
     <Compile Include="modules\frameModules.vb" />
@@ -234,11 +240,22 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modules\userModules.vb" />
+    <Compile Include="savings\print_savings.Designer.vb">
+      <DependentUpon>print_savings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="savings\print_savings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="savings\savings.designer.vb">
       <DependentUpon>savings.vb</DependentUpon>
     </Compile>
     <Compile Include="savings\savings.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="savings\savings_transac.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>savings_transac.rpt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -272,8 +289,15 @@
     <EmbeddedResource Include="main\subframe.resx">
       <DependentUpon>subframe.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="savings\print_savings.resx">
+      <DependentUpon>print_savings.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="savings\savings.resx">
       <DependentUpon>savings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="savings\savings_transac.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>savings_transac.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -295,6 +319,9 @@
     <None Include="Resources\user %289%29.png" />
     <None Include="Resources\len.png" />
     <None Include="Resources\photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
