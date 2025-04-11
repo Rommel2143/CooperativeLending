@@ -31,7 +31,6 @@ Partial Class savings
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.datagrid1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.export_excel = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lbl_acc = New System.Windows.Forms.Label()
@@ -43,13 +42,14 @@ Partial Class savings
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.txt_amountdeposit = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txt_password = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmb_withtrans = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.btn_withdraw = New Guna.UI2.WinForms.Guna2Button()
         Me.txt_amountwithdraw = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.export_excel = New Guna.UI2.WinForms.Guna2Button()
+        Me.txt_password = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txt_passwithdraw = New Guna.UI2.WinForms.Guna2TextBox()
         Me.tab1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -182,26 +182,6 @@ Partial Class savings
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(858, 166)
         Me.Guna2Panel1.TabIndex = 3
-        '
-        'export_excel
-        '
-        Me.export_excel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.export_excel.BorderColor = System.Drawing.Color.Green
-        Me.export_excel.BorderRadius = 3
-        Me.export_excel.BorderThickness = 1
-        Me.export_excel.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.export_excel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.export_excel.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.export_excel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.export_excel.FillColor = System.Drawing.Color.Transparent
-        Me.export_excel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.export_excel.ForeColor = System.Drawing.Color.Green
-        Me.export_excel.Image = CType(resources.GetObject("export_excel.Image"), System.Drawing.Image)
-        Me.export_excel.Location = New System.Drawing.Point(747, 124)
-        Me.export_excel.Name = "export_excel"
-        Me.export_excel.Size = New System.Drawing.Size(92, 36)
-        Me.export_excel.TabIndex = 87
-        Me.export_excel.Text = "Export"
         '
         'Guna2Panel2
         '
@@ -365,31 +345,6 @@ Partial Class savings
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Deposit Funds"
         '
-        'txt_password
-        '
-        Me.txt_password.BorderColor = System.Drawing.Color.Black
-        Me.txt_password.BorderRadius = 3
-        Me.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_password.DefaultText = ""
-        Me.txt_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txt_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txt_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txt_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_password.Font = New System.Drawing.Font("Segoe UI", 11.25!)
-        Me.txt_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_password.IconLeft = CType(resources.GetObject("txt_password.IconLeft"), System.Drawing.Image)
-        Me.txt_password.IconLeftSize = New System.Drawing.Size(30, 30)
-        Me.txt_password.Location = New System.Drawing.Point(46, 211)
-        Me.txt_password.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_password.Name = "txt_password"
-        Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
-        Me.txt_password.PlaceholderText = "Password..."
-        Me.txt_password.SelectedText = ""
-        Me.txt_password.Size = New System.Drawing.Size(157, 40)
-        Me.txt_password.TabIndex = 53
-        Me.txt_password.UseSystemPasswordChar = True
-        '
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.Label1)
@@ -485,6 +440,51 @@ Partial Class savings
         Me.Label4.Size = New System.Drawing.Size(151, 25)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Withdraw Funds"
+        '
+        'export_excel
+        '
+        Me.export_excel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.export_excel.BorderColor = System.Drawing.Color.Green
+        Me.export_excel.BorderRadius = 3
+        Me.export_excel.BorderThickness = 1
+        Me.export_excel.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.export_excel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.export_excel.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.export_excel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.export_excel.FillColor = System.Drawing.Color.Transparent
+        Me.export_excel.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.export_excel.ForeColor = System.Drawing.Color.Green
+        Me.export_excel.Image = CType(resources.GetObject("export_excel.Image"), System.Drawing.Image)
+        Me.export_excel.Location = New System.Drawing.Point(747, 124)
+        Me.export_excel.Name = "export_excel"
+        Me.export_excel.Size = New System.Drawing.Size(92, 36)
+        Me.export_excel.TabIndex = 87
+        Me.export_excel.Text = "Export"
+        '
+        'txt_password
+        '
+        Me.txt_password.BorderColor = System.Drawing.Color.Black
+        Me.txt_password.BorderRadius = 3
+        Me.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_password.DefaultText = ""
+        Me.txt_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txt_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txt_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txt_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_password.Font = New System.Drawing.Font("Segoe UI", 11.25!)
+        Me.txt_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_password.IconLeft = CType(resources.GetObject("txt_password.IconLeft"), System.Drawing.Image)
+        Me.txt_password.IconLeftSize = New System.Drawing.Size(30, 30)
+        Me.txt_password.Location = New System.Drawing.Point(46, 211)
+        Me.txt_password.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_password.Name = "txt_password"
+        Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
+        Me.txt_password.PlaceholderText = "Password..."
+        Me.txt_password.SelectedText = ""
+        Me.txt_password.Size = New System.Drawing.Size(157, 40)
+        Me.txt_password.TabIndex = 53
+        Me.txt_password.UseSystemPasswordChar = True
         '
         'txt_passwithdraw
         '

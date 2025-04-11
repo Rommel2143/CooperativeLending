@@ -41,8 +41,8 @@ Public Class member_accounts
 
                 getClient(datagrid1.Rows(e.RowIndex).Cells("Account no.").Value.ToString())
 
-                member_options.Show()
-                    member_options.BringToFront()
+                member_options.ShowDialog()
+                member_options.BringToFront()
 
             End If
         Catch ex As Exception

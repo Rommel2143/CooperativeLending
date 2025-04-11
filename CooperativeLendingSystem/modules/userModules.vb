@@ -7,27 +7,33 @@ Module userModules
     Public user_pc As String
 
     Public Function isLogin(IDno As String, pass As String) As Boolean
-        Dim query As String = "SELECT account_no,username,pass FROM user WHERE (account_no = @account_no OR username=@account_no) AND pass = @pass"
+        Try
 
 
-        Using cmd As New MySqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@account_no", IDno)
-            cmd.Parameters.AddWithValue("@pass", pass)
-            con.Close()
-            con.Open()
-            dr = cmd.ExecuteReader
-            If dr.Read = True Then
+            Dim query As String = "SELECT account_no,username,pass FROM user WHERE (account_no = @account_no OR username=@account_no) AND pass = @pass"
 
-                user_IDno = dr.GetString("account_no")
-                user_Username = dr.GetString("username")
-                user_Password = dr.GetString("pass")
-                user_pc = Environment.MachineName
-                Return 1
-            Else
-                Return 0
-            End If
-        End Using
 
+            Using cmd As New MySqlCommand(query, con)
+                cmd.Parameters.AddWithValue("@account_no", IDno)
+                cmd.Parameters.AddWithValue("@pass", pass)
+                con.Close()
+                con.Open()
+                dr = cmd.ExecuteReader
+                If dr.Read = True Then
+
+                    user_IDno = dr.GetString("account_no")
+                    user_Username = dr.GetString("username")
+                    user_Password = dr.GetString("pass")
+                    user_pc = Environment.MachineName
+                    Return 1
+                Else
+                    Return 0
+                End If
+            End Using
+        Catch ex As Exception
+            show_error("Something went wrong. Please try again.")
+            Return 0
+        End Try
     End Function
 
 

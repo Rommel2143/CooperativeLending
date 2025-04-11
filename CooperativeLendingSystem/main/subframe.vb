@@ -7,12 +7,15 @@
     End Sub
 
     Private Sub btn_profile_Click(sender As Object, e As EventArgs) Handles btn_profile.Click
-        btn_user.Text = "Hi, " & user_Username
-        btn_administrator.Visible = isAccess("admin")
-        If btn_profile.ContextMenuStrip IsNot Nothing Then
-            btn_profile.ContextMenuStrip.Show(btn_profile, 0, btn_profile.Height)
 
-        End If
+        btn_user.Text = "Hi, " & user_Username
+            btn_administrator.Visible = isAccess("admin")
+            If btn_profile.ContextMenuStrip IsNot Nothing Then
+                btn_profile.ContextMenuStrip.Show(btn_profile, 0, btn_profile.Height)
+
+            End If
+
+
     End Sub
 
     Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click

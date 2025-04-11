@@ -51,10 +51,25 @@ Public Class member_options
     End Sub
 
     Private Sub Guna2TileButton2_Click(sender As Object, e As EventArgs) Handles Guna2TileButton2.Click
+        If isAccess("savings") = True Then
+            display_inSub(New savings)
+            Me.Close()
+        Else
+            show_error("You need permission to access this feature.")
+        End If
+    End Sub
 
-        display_inSub(New savings)
+    Private Sub Guna2TileButton1_Click(sender As Object, e As EventArgs) Handles Guna2TileButton1.Click
+        display_inSub(New update_member)
         Me.Close()
     End Sub
 
-
+    Private Sub Guna2TileButton3_Click(sender As Object, e As EventArgs) Handles Guna2TileButton3.Click
+        If isAccess("sharecap") = True Then
+            display_inSub(New sharecap_collection)
+            Me.Close()
+        Else
+            show_error("You need permission to access this feature.")
+        End If
+    End Sub
 End Class

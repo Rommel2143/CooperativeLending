@@ -199,6 +199,12 @@
     <Compile Include="member\member_options.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="member\update_member.Designer.vb">
+      <DependentUpon>update_member.vb</DependentUpon>
+    </Compile>
+    <Compile Include="member\update_member.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="modules\clients.vb" />
     <Compile Include="modules\dbConnection.vb" />
     <Compile Include="modules\exportExcel.vb" />
@@ -215,7 +221,6 @@
     <Compile Include="main\Mainframe.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="modules\savingsModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -257,6 +262,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>savings_transac.rpt</DependentUpon>
     </Compile>
+    <Compile Include="sharecap\print_passbook.Designer.vb">
+      <DependentUpon>print_passbook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sharecap\print_passbook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sharecap\sharecappassbook.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sharecappassbook.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sharecap\sharecap_collection.designer.vb">
+      <DependentUpon>sharecap_collection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sharecap\sharecap_collection.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="administrator\update_user.resx">
@@ -280,6 +303,9 @@
     <EmbeddedResource Include="member\member_options.resx">
       <DependentUpon>member_options.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="member\update_member.resx">
+      <DependentUpon>update_member.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -298,6 +324,16 @@
     <EmbeddedResource Include="savings\savings_transac.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>savings_transac.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sharecap\print_passbook.resx">
+      <DependentUpon>print_passbook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sharecap\sharecappassbook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>sharecappassbook.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sharecap\sharecap_collection.resx">
+      <DependentUpon>sharecap_collection.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -323,5 +359,6 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -28,12 +28,12 @@ Partial Class member_options
         Me.lbl_fullname = New System.Windows.Forms.Label()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.pic_user = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.lbl_accountno = New System.Windows.Forms.Label()
         Me.Guna2TileButton4 = New Guna.UI2.WinForms.Guna2TileButton()
         Me.Guna2TileButton3 = New Guna.UI2.WinForms.Guna2TileButton()
         Me.Guna2TileButton2 = New Guna.UI2.WinForms.Guna2TileButton()
         Me.Guna2TileButton1 = New Guna.UI2.WinForms.Guna2TileButton()
-        Me.pic_user = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.pic_user, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -85,6 +85,19 @@ Partial Class member_options
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(685, 153)
         Me.Guna2Panel1.TabIndex = 92
+        '
+        'pic_user
+        '
+        Me.pic_user.BackColor = System.Drawing.Color.Transparent
+        Me.pic_user.ImageRotate = 0!
+        Me.pic_user.Location = New System.Drawing.Point(50, 49)
+        Me.pic_user.Name = "pic_user"
+        Me.pic_user.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.pic_user.Size = New System.Drawing.Size(90, 90)
+        Me.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pic_user.TabIndex = 92
+        Me.pic_user.TabStop = False
+        Me.pic_user.UseTransparentBackground = True
         '
         'lbl_accountno
         '
@@ -194,19 +207,6 @@ Partial Class member_options
         Me.Guna2TileButton1.Size = New System.Drawing.Size(106, 112)
         Me.Guna2TileButton1.TabIndex = 86
         Me.Guna2TileButton1.Text = "Info"
-        '
-        'pic_user
-        '
-        Me.pic_user.BackColor = System.Drawing.Color.Transparent
-        Me.pic_user.ImageRotate = 0!
-        Me.pic_user.Location = New System.Drawing.Point(50, 49)
-        Me.pic_user.Name = "pic_user"
-        Me.pic_user.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.pic_user.Size = New System.Drawing.Size(90, 90)
-        Me.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pic_user.TabIndex = 92
-        Me.pic_user.TabStop = False
-        Me.pic_user.UseTransparentBackground = True
         '
         'member_options
         '

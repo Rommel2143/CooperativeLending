@@ -194,4 +194,16 @@ ORDER BY id DESC;
     Private Sub export_excel_Click(sender As Object, e As EventArgs) Handles export_excel.Click
         exporttoExcel(datagrid1)
     End Sub
+
+    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
+
+    End Sub
+
+    Private Sub txt_amountdeposit_TextChanged(sender As Object, e As EventArgs) Handles txt_amountdeposit.TextChanged
+
+    End Sub
+
+    Private Sub datagrid1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagrid1.CellContentClick
+
+    End Sub
 End Class

@@ -87,6 +87,7 @@ Partial Class add_member
         Me.txt_birthplace.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txt_birthplace.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_birthplace.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_birthplace.ForeColor = System.Drawing.Color.Black
         Me.txt_birthplace.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_birthplace.Location = New System.Drawing.Point(67, 332)
         Me.txt_birthplace.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -118,7 +119,7 @@ Partial Class add_member
         Me.cmb_gender.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_gender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_gender.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.cmb_gender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmb_gender.ForeColor = System.Drawing.Color.Black
         Me.cmb_gender.ItemHeight = 30
         Me.cmb_gender.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.cmb_gender.Location = New System.Drawing.Point(618, 256)
@@ -159,7 +160,7 @@ Partial Class add_member
         Me.dtpicker1.Checked = True
         Me.dtpicker1.FillColor = System.Drawing.Color.White
         Me.dtpicker1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpicker1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dtpicker1.ForeColor = System.Drawing.Color.Black
         Me.dtpicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.dtpicker1.Location = New System.Drawing.Point(67, 256)
         Me.dtpicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
@@ -194,6 +195,7 @@ Partial Class add_member
         Me.txt_account.Enabled = False
         Me.txt_account.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_account.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_account.ForeColor = System.Drawing.Color.Black
         Me.txt_account.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_account.Location = New System.Drawing.Point(67, 94)
         Me.txt_account.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -227,6 +229,7 @@ Partial Class add_member
         Me.txt_lastname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txt_lastname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_lastname.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_lastname.ForeColor = System.Drawing.Color.Black
         Me.txt_lastname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_lastname.Location = New System.Drawing.Point(618, 174)
         Me.txt_lastname.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -260,6 +263,7 @@ Partial Class add_member
         Me.txt_midlename.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txt_midlename.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_midlename.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_midlename.ForeColor = System.Drawing.Color.Black
         Me.txt_midlename.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_midlename.Location = New System.Drawing.Point(342, 174)
         Me.txt_midlename.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -293,6 +297,7 @@ Partial Class add_member
         Me.txt_firstname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txt_firstname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_firstname.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_firstname.ForeColor = System.Drawing.Color.Black
         Me.txt_firstname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_firstname.Location = New System.Drawing.Point(67, 174)
         Me.txt_firstname.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -312,7 +317,7 @@ Partial Class add_member
         Me.cmb_civil.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_civil.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_civil.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.cmb_civil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmb_civil.ForeColor = System.Drawing.Color.Black
         Me.cmb_civil.ItemHeight = 30
         Me.cmb_civil.Items.AddRange(New Object() {"Single", "Married", "Divorced", "Widowed", "Other"})
         Me.cmb_civil.Location = New System.Drawing.Point(342, 256)
@@ -344,6 +349,7 @@ Partial Class add_member
         Me.txt_contact2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txt_contact2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_contact2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_contact2.ForeColor = System.Drawing.Color.Black
         Me.txt_contact2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_contact2.Location = New System.Drawing.Point(342, 483)
         Me.txt_contact2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -377,6 +383,7 @@ Partial Class add_member
         Me.txt_email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txt_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_email.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_email.ForeColor = System.Drawing.Color.Black
         Me.txt_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_email.Location = New System.Drawing.Point(66, 560)
         Me.txt_email.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -410,6 +417,7 @@ Partial Class add_member
         Me.txt_contact1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txt_contact1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_contact1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_contact1.ForeColor = System.Drawing.Color.Black
         Me.txt_contact1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_contact1.Location = New System.Drawing.Point(67, 483)
         Me.txt_contact1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -443,6 +451,7 @@ Partial Class add_member
         Me.txt_presentadd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txt_presentadd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_presentadd.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_presentadd.ForeColor = System.Drawing.Color.Black
         Me.txt_presentadd.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_presentadd.Location = New System.Drawing.Point(66, 405)
         Me.txt_presentadd.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -476,6 +485,7 @@ Partial Class add_member
         Me.txt_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txt_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_id.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_id.ForeColor = System.Drawing.Color.Black
         Me.txt_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_id.Location = New System.Drawing.Point(618, 644)
         Me.txt_id.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -507,7 +517,7 @@ Partial Class add_member
         Me.cmb_idtype.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_idtype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_idtype.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.cmb_idtype.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmb_idtype.ForeColor = System.Drawing.Color.Black
         Me.cmb_idtype.ItemHeight = 30
         Me.cmb_idtype.Items.AddRange(New Object() {"TIN", "Driver's License", "National ID", "SSS", "UMID", "Passport", "Other"})
         Me.cmb_idtype.Location = New System.Drawing.Point(342, 644)
@@ -537,7 +547,7 @@ Partial Class add_member
         Me.cmb_empstatus.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_empstatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_empstatus.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.cmb_empstatus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmb_empstatus.ForeColor = System.Drawing.Color.Black
         Me.cmb_empstatus.ItemHeight = 30
         Me.cmb_empstatus.Items.AddRange(New Object() {"Employed", "Self-Employed", "Unemployed", "Retired", "Freelancer", "Other"})
         Me.cmb_empstatus.Location = New System.Drawing.Point(67, 644)
@@ -581,7 +591,7 @@ Partial Class add_member
         Me.upload_pic.ForeColor = System.Drawing.Color.Gray
         Me.upload_pic.Image = CType(resources.GetObject("upload_pic.Image"), System.Drawing.Image)
         Me.upload_pic.ImageSize = New System.Drawing.Size(35, 35)
-        Me.upload_pic.Location = New System.Drawing.Point(365, 832)
+        Me.upload_pic.Location = New System.Drawing.Point(345, 832)
         Me.upload_pic.Name = "upload_pic"
         Me.upload_pic.PressedColor = System.Drawing.Color.DimGray
         Me.upload_pic.ShadowDecoration.Color = System.Drawing.Color.DarkGray
@@ -608,7 +618,7 @@ Partial Class add_member
         Me.open_cam.ForeColor = System.Drawing.Color.Gray
         Me.open_cam.Image = CType(resources.GetObject("open_cam.Image"), System.Drawing.Image)
         Me.open_cam.ImageSize = New System.Drawing.Size(30, 30)
-        Me.open_cam.Location = New System.Drawing.Point(365, 752)
+        Me.open_cam.Location = New System.Drawing.Point(345, 752)
         Me.open_cam.Name = "open_cam"
         Me.open_cam.PressedColor = System.Drawing.Color.DimGray
         Me.open_cam.ShadowDecoration.Color = System.Drawing.Color.DarkGray
@@ -634,13 +644,13 @@ Partial Class add_member
         'pic_user
         '
         Me.pic_user.BackColor = System.Drawing.Color.Transparent
-        Me.pic_user.BorderRadius = 3
+        Me.pic_user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pic_user.ImageRotate = 0!
         Me.pic_user.Location = New System.Drawing.Point(66, 752)
         Me.pic_user.Name = "pic_user"
         Me.pic_user.ShadowDecoration.Color = System.Drawing.Color.Silver
         Me.pic_user.ShadowDecoration.Enabled = True
-        Me.pic_user.Size = New System.Drawing.Size(293, 271)
+        Me.pic_user.Size = New System.Drawing.Size(270, 270)
         Me.pic_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic_user.TabIndex = 92
         Me.pic_user.TabStop = False
