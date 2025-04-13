@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Globalization
 Imports System.Text.RegularExpressions
+Imports Guna.UI2.WinForms
 Public Class savings
 
     Private Sub savings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -161,11 +162,28 @@ ORDER BY id DESC;
 
 
     Private Sub txt_amount_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_amountwithdraw.KeyPress, txt_amountdeposit.KeyPress
-        ' Allow only numbers, one decimal point, and control keys (Backspace)
-        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> "."c Then
-            e.Handled = True ' Ignore the input
+        Dim txtBox As Guna2TextBox = CType(sender, Guna2TextBox)
+
+        ' Allow control keys like Backspace
+        If Char.IsControl(e.KeyChar) Then
+            Exit Sub
         End If
 
+        ' Allow digits
+        If Char.IsDigit(e.KeyChar) Then
+            Exit Sub
+        End If
+
+        ' Allow only one decimal point
+        If e.KeyChar = "."c Then
+            If txtBox.Text.Contains(".") Then
+                e.Handled = True ' Already has a decimal point
+            End If
+            Exit Sub
+        End If
+
+        ' Block all other characters
+        e.Handled = True
 
     End Sub
 

@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>piggy-bank %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
       <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
@@ -175,6 +178,18 @@
     <Compile Include="administrator\update_user.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="loan\loan_application.Designer.vb">
+      <DependentUpon>loan_application.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loan\loan_application.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loan\search_name.designer.vb">
+      <DependentUpon>search_name.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loan\search_name.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="member\add_member.Designer.vb">
       <DependentUpon>add_member.vb</DependentUpon>
     </Compile>
@@ -261,6 +276,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>savings_transac.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="sharecap\print_passbook.Designer.vb">
       <DependentUpon>print_passbook.vb</DependentUpon>
@@ -284,6 +300,12 @@
   <ItemGroup>
     <EmbeddedResource Include="administrator\update_user.resx">
       <DependentUpon>update_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loan\loan_application.resx">
+      <DependentUpon>loan_application.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loan\search_name.resx">
+      <DependentUpon>search_name.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="member\add_member.resx">
       <DependentUpon>add_member.vb</DependentUpon>
@@ -351,6 +373,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <Content Include="piggy-bank %281%29.ico" />
     <None Include="Resources\print.png" />
     <None Include="Resources\user %289%29.png" />
     <None Include="Resources\len.png" />

@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Globalization
 Imports System.Text.RegularExpressions
+Imports Guna.UI2.WinForms
 Public Class sharecap_collection
 
     Private Sub sharecap_collection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -8,7 +9,7 @@ Public Class sharecap_collection
     End Sub
 
 
-    Public Sub loaddata()
+    Private Sub loaddata()
         lbl_balance.Text = String.Format("₱{0:N2}", checksharecap(client_accountno))
         lbl_accountname.Text = client_firstname.ToUpper & " " & client_lastname.ToUpper
         lbl_acc.Text = "Acc# : " & client_accountno
@@ -131,9 +132,28 @@ Public Class sharecap_collection
 
 
     Private Sub txt_amountdeposit_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_amountdeposit.KeyPress
-        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> "."c Then
-            e.Handled = True ' Ignore the input
+        Dim txtBox As Guna2TextBox = CType(sender, Guna2TextBox)
+
+        ' Allow control keys like Backspace
+        If Char.IsControl(e.KeyChar) Then
+            Exit Sub
         End If
+
+        ' Allow digits
+        If Char.IsDigit(e.KeyChar) Then
+            Exit Sub
+        End If
+
+        ' Allow only one decimal point
+        If e.KeyChar = "."c Then
+            If txtBox.Text.Contains(".") Then
+                e.Handled = True ' Already has a decimal point
+            End If
+            Exit Sub
+        End If
+
+        ' Block all other characters
+        e.Handled = True
     End Sub
 
 
@@ -157,6 +177,10 @@ Public Class sharecap_collection
 
 
         End If
+
+    End Sub
+
+    Private Sub txt_amountdeposit_TextChanged(sender As Object, e As EventArgs) Handles txt_amountdeposit.TextChanged
 
     End Sub
 End Class

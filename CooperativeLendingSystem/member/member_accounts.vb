@@ -59,4 +59,12 @@ Public Class member_accounts
     Private Sub datagrid1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagrid1.CellContentClick
 
     End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        If isAccess("add_member") = True Then
+            display_inSub(add_member)
+        Else
+            show_error("You need permission to access this content.")
+        End If
+    End Sub
 End Class

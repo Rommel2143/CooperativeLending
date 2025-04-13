@@ -33,22 +33,22 @@ Partial Class sharecap_collection
         Me.txt_amountdeposit = New Guna.UI2.WinForms.Guna2TextBox()
         Me.datagrid1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.tab1 = New Guna.UI2.WinForms.Guna2TabControl()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txt_password = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lbl_acc = New System.Windows.Forms.Label()
         Me.lbl_accountname = New System.Windows.Forms.Label()
         Me.lbl_balance = New System.Windows.Forms.Label()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.tab1 = New Guna.UI2.WinForms.Guna2TabControl()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt_password = New Guna.UI2.WinForms.Guna2TextBox()
         CType(Me.datagrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.tab1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'cmb_transaction
@@ -203,6 +203,73 @@ Partial Class sharecap_collection
         Me.Guna2Panel1.Size = New System.Drawing.Size(1189, 195)
         Me.Guna2Panel1.TabIndex = 3
         '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Guna2Panel2.BorderRadius = 5
+        Me.Guna2Panel2.BorderThickness = 1
+        Me.Guna2Panel2.Controls.Add(Me.Label5)
+        Me.Guna2Panel2.Controls.Add(Me.lbl_acc)
+        Me.Guna2Panel2.Controls.Add(Me.lbl_accountname)
+        Me.Guna2Panel2.Controls.Add(Me.lbl_balance)
+        Me.Guna2Panel2.FillColor = System.Drawing.Color.White
+        Me.Guna2Panel2.Location = New System.Drawing.Point(29, 30)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.ShadowDecoration.BorderRadius = 7
+        Me.Guna2Panel2.ShadowDecoration.Color = System.Drawing.Color.Silver
+        Me.Guna2Panel2.ShadowDecoration.Enabled = True
+        Me.Guna2Panel2.Size = New System.Drawing.Size(329, 103)
+        Me.Guna2Panel2.TabIndex = 7
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label5.Location = New System.Drawing.Point(15, 65)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(166, 21)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Share Capital Balance :"
+        '
+        'lbl_acc
+        '
+        Me.lbl_acc.AutoSize = True
+        Me.lbl_acc.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_acc.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_acc.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_acc.Location = New System.Drawing.Point(15, 39)
+        Me.lbl_acc.Name = "lbl_acc"
+        Me.lbl_acc.Size = New System.Drawing.Size(88, 21)
+        Me.lbl_acc.TabIndex = 2
+        Me.lbl_acc.Text = "Account no"
+        '
+        'lbl_accountname
+        '
+        Me.lbl_accountname.AutoSize = True
+        Me.lbl_accountname.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_accountname.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_accountname.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_accountname.Location = New System.Drawing.Point(13, 9)
+        Me.lbl_accountname.Name = "lbl_accountname"
+        Me.lbl_accountname.Size = New System.Drawing.Size(148, 30)
+        Me.lbl_accountname.TabIndex = 1
+        Me.lbl_accountname.Text = "Account name"
+        '
+        'lbl_balance
+        '
+        Me.lbl_balance.AutoSize = True
+        Me.lbl_balance.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_balance.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_balance.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_balance.Location = New System.Drawing.Point(177, 65)
+        Me.lbl_balance.Name = "lbl_balance"
+        Me.lbl_balance.Size = New System.Drawing.Size(64, 21)
+        Me.lbl_balance.TabIndex = 0
+        Me.lbl_balance.Text = "000000"
+        '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.datagrid1)
@@ -300,73 +367,6 @@ Partial Class sharecap_collection
         Me.txt_password.TabIndex = 53
         Me.txt_password.UseSystemPasswordChar = True
         '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2Panel2.BorderRadius = 5
-        Me.Guna2Panel2.BorderThickness = 1
-        Me.Guna2Panel2.Controls.Add(Me.Label5)
-        Me.Guna2Panel2.Controls.Add(Me.lbl_acc)
-        Me.Guna2Panel2.Controls.Add(Me.lbl_accountname)
-        Me.Guna2Panel2.Controls.Add(Me.lbl_balance)
-        Me.Guna2Panel2.FillColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Location = New System.Drawing.Point(29, 30)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.ShadowDecoration.BorderRadius = 7
-        Me.Guna2Panel2.ShadowDecoration.Color = System.Drawing.Color.Silver
-        Me.Guna2Panel2.ShadowDecoration.Enabled = True
-        Me.Guna2Panel2.Size = New System.Drawing.Size(329, 103)
-        Me.Guna2Panel2.TabIndex = 7
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label5.Location = New System.Drawing.Point(15, 65)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(166, 21)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = "Share Capital Balance :"
-        '
-        'lbl_acc
-        '
-        Me.lbl_acc.AutoSize = True
-        Me.lbl_acc.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_acc.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_acc.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lbl_acc.Location = New System.Drawing.Point(15, 39)
-        Me.lbl_acc.Name = "lbl_acc"
-        Me.lbl_acc.Size = New System.Drawing.Size(88, 21)
-        Me.lbl_acc.TabIndex = 2
-        Me.lbl_acc.Text = "Account no"
-        '
-        'lbl_accountname
-        '
-        Me.lbl_accountname.AutoSize = True
-        Me.lbl_accountname.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_accountname.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_accountname.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lbl_accountname.Location = New System.Drawing.Point(13, 9)
-        Me.lbl_accountname.Name = "lbl_accountname"
-        Me.lbl_accountname.Size = New System.Drawing.Size(148, 30)
-        Me.lbl_accountname.TabIndex = 1
-        Me.lbl_accountname.Text = "Account name"
-        '
-        'lbl_balance
-        '
-        Me.lbl_balance.AutoSize = True
-        Me.lbl_balance.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_balance.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_balance.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lbl_balance.Location = New System.Drawing.Point(177, 65)
-        Me.lbl_balance.Name = "lbl_balance"
-        Me.lbl_balance.Size = New System.Drawing.Size(64, 21)
-        Me.lbl_balance.TabIndex = 0
-        Me.lbl_balance.Text = "000000"
-        '
         'sharecap_collection
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -381,12 +381,12 @@ Partial Class sharecap_collection
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.datagrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel2.ResumeLayout(False)
+        Me.Guna2Panel2.PerformLayout()
         Me.TabPage1.ResumeLayout(False)
         Me.tab1.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
-        Me.Guna2Panel2.ResumeLayout(False)
-        Me.Guna2Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

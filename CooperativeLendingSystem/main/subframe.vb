@@ -43,16 +43,12 @@
 
     End Sub
 
-    Private Sub AddMemberToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddMemberToolStripMenuItem.Click
-        If isAccess("add_member") = True Then
-            display_inSub(add_member)
-        Else
-            show_error("You need permission to access this content.")
-        End If
+    Private Sub AddMemberToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
     End Sub
 
-    Private Sub AccountsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AccountsToolStripMenuItem.Click
-        display_inSub(member_accounts)
+    Private Sub AccountsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub btn_administrator_Click(sender As Object, e As EventArgs) Handles btn_administrator.Click
@@ -65,5 +61,9 @@
 
     Private Sub UpdateUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UpdateUserToolStripMenuItem.Click
         display_inSub(update_user)
+    End Sub
+
+    Private Sub MembersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MembersToolStripMenuItem.Click
+        display_inSub(member_accounts)
     End Sub
 End Class

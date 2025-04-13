@@ -27,25 +27,23 @@ Partial Class subframe
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnmenu_strip = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.MembersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddMemberToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AccountsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.profile_menu = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btn_menu = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnmenu_strip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.MembersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btn_profile = New Guna.UI2.WinForms.Guna2Button()
+        Me.profile_menu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.btn_user = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.btn_administrator = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpdateUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.btnmenu_strip.SuspendLayout()
         Me.profile_menu.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -80,43 +78,6 @@ Partial Class subframe
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Lipa Parish Multi-Purpose" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Cooperative"
         '
-        'btnmenu_strip
-        '
-        Me.btnmenu_strip.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnmenu_strip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MembersToolStripMenuItem})
-        Me.btnmenu_strip.Name = "ContextMenuStrip1"
-        Me.btnmenu_strip.Size = New System.Drawing.Size(147, 30)
-        '
-        'MembersToolStripMenuItem
-        '
-        Me.MembersToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddMemberToolStripMenuItem, Me.AccountsToolStripMenuItem})
-        Me.MembersToolStripMenuItem.Name = "MembersToolStripMenuItem"
-        Me.MembersToolStripMenuItem.Size = New System.Drawing.Size(146, 26)
-        Me.MembersToolStripMenuItem.Text = "Members"
-        '
-        'AddMemberToolStripMenuItem
-        '
-        Me.AddMemberToolStripMenuItem.Name = "AddMemberToolStripMenuItem"
-        Me.AddMemberToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
-        Me.AddMemberToolStripMenuItem.Text = "Add member"
-        '
-        'AccountsToolStripMenuItem
-        '
-        Me.AccountsToolStripMenuItem.Name = "AccountsToolStripMenuItem"
-        Me.AccountsToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
-        Me.AccountsToolStripMenuItem.Text = "Accounts"
-        '
-        'profile_menu
-        '
-        Me.profile_menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_user, Me.ToolStripSeparator1, Me.btn_administrator, Me.LogoutToolStripMenuItem})
-        Me.profile_menu.Name = "ContextMenuStrip1"
-        Me.profile_menu.Size = New System.Drawing.Size(163, 100)
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(159, 6)
-        '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
@@ -149,6 +110,19 @@ Partial Class subframe
         Me.ToolTip1.SetToolTip(Me.btn_menu, "Menu")
         Me.btn_menu.UseTransparentBackground = True
         '
+        'btnmenu_strip
+        '
+        Me.btnmenu_strip.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnmenu_strip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MembersToolStripMenuItem})
+        Me.btnmenu_strip.Name = "ContextMenuStrip1"
+        Me.btnmenu_strip.Size = New System.Drawing.Size(181, 52)
+        '
+        'MembersToolStripMenuItem
+        '
+        Me.MembersToolStripMenuItem.Name = "MembersToolStripMenuItem"
+        Me.MembersToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.MembersToolStripMenuItem.Text = "Members"
+        '
         'btn_profile
         '
         Me.btn_profile.BackColor = System.Drawing.Color.Transparent
@@ -169,6 +143,12 @@ Partial Class subframe
         Me.btn_profile.TabIndex = 2
         Me.ToolTip1.SetToolTip(Me.btn_profile, "Profile")
         '
+        'profile_menu
+        '
+        Me.profile_menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btn_user, Me.ToolStripSeparator1, Me.btn_administrator, Me.LogoutToolStripMenuItem})
+        Me.profile_menu.Name = "ContextMenuStrip1"
+        Me.profile_menu.Size = New System.Drawing.Size(163, 100)
+        '
         'btn_user
         '
         Me.btn_user.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -178,6 +158,11 @@ Partial Class subframe
         Me.btn_user.Name = "btn_user"
         Me.btn_user.Size = New System.Drawing.Size(162, 30)
         Me.btn_user.Text = "User"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(159, 6)
         '
         'btn_administrator
         '
@@ -226,9 +211,9 @@ Partial Class subframe
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.btnmenu_strip.ResumeLayout(False)
         Me.profile_menu.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -247,8 +232,6 @@ Partial Class subframe
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents MembersToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AddMemberToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AccountsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddUserToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UpdateUserToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -72,4 +72,14 @@ Public Class member_options
             show_error("You need permission to access this feature.")
         End If
     End Sub
+
+    Private Sub Guna2TileButton4_Click(sender As Object, e As EventArgs) Handles Guna2TileButton4.Click
+        If isAccess("loan_apply") = True Then
+
+            display_inSub(New loan_application)
+            Me.Close()
+        Else
+            show_error("You need permission to access this feature.")
+        End If
+    End Sub
 End Class

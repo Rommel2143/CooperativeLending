@@ -47,7 +47,7 @@ Module dbConnection
 
 
                     While reader.Read()
-                        cmb.Items.Add(reader.GetString(0))
+                        cmb.Items.Add(reader(0).ToString)
                     End While
 
 
