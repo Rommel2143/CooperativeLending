@@ -122,11 +122,11 @@ ORDER BY id DESC;
                 Dim trans As String = Nothing
                 Select Case cmb_withtrans.Text
                     Case "Cash"
-                        trans = "CW"
+                        trans = "CSHWIT"
                     Case "Check"
                         trans = "CHKW"
                     Case "Debit"
-                        trans = "DM"
+                        trans = "DMEMO"
                     Case "Interest"
                         trans = "INT"
                 End Select

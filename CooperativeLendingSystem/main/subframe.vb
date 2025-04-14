@@ -66,4 +66,13 @@
     Private Sub MembersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MembersToolStripMenuItem.Click
         display_inSub(member_accounts)
     End Sub
+
+    Private Sub CollectionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CollectionToolStripMenuItem.Click
+        If isAccess("collection") = True Then
+
+            display_inSub(collection)
+        Else
+            show_error("You need permission to access this feature.")
+        End If
+    End Sub
 End Class

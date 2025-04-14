@@ -39,21 +39,27 @@ Module userModules
 
 
     Public Function isAccess(column As String) As Boolean
-        Dim query As String = "SELECT  " & column & " FROM user WHERE account_no = @account_no"
+        Try
 
-        Using cmd As New MySqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@account_no", user_IDno)
 
-            con.Close()
-            con.Open()
-            dr = cmd.ExecuteReader
-            If dr.Read = True Then
-                Return dr.GetBoolean(0)
-            Else
-                Return 0
-            End If
-        End Using
+            Dim query As String = "SELECT  " & column & " FROM user WHERE account_no = @account_no"
 
+            Using cmd As New MySqlCommand(query, con)
+                cmd.Parameters.AddWithValue("@account_no", user_IDno)
+
+                con.Close()
+                con.Open()
+                dr = cmd.ExecuteReader
+                If dr.Read = True Then
+                    Return dr.GetBoolean(0)
+                Else
+                    Return 0
+                End If
+            End Using
+        Catch ex As Exception
+            Return 0
+            show_error(ex.Message)
+        End Try
     End Function
 
 

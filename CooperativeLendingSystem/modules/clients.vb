@@ -64,7 +64,6 @@ THEN `amount` ELSE 0 END)
                     - 
             SUM(CASE WHEN `status` = 'CW'
                         or status = 'CHKW' 
-                        or status = 'DM'
   or status='DAMAY'
   or status='DMEMO'
   or status='DEDB'
@@ -106,9 +105,7 @@ THEN `amount` ELSE 0 END)
 
             ' Define the SQL command to check balance
             Dim check As New MySqlCommand("SELECT 
-            SUM(CASE WHEN `status` = 'ID' 
-or status='CM'
-or status='CD'
+            SUM(CASE WHEN `status` = 'ID'
 or status='ISC' 
 or status='IPR' 
 or status='C'
@@ -121,9 +118,8 @@ or status='INT'
 
 THEN `amount` ELSE 0 END) - 
 
-            SUM(CASE WHEN `status` = 'DM' 
+            SUM(CASE WHEN 
 or status = 'CA' 
-or status='D'
 or status='DMEMO'
 or status='CHKWID'
 or status='CSHWIT'
