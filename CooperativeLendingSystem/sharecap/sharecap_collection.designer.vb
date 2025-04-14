@@ -227,7 +227,7 @@ Partial Class sharecap_collection
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Location = New System.Drawing.Point(15, 65)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(166, 21)
@@ -239,7 +239,7 @@ Partial Class sharecap_collection
         Me.lbl_acc.AutoSize = True
         Me.lbl_acc.BackColor = System.Drawing.Color.Transparent
         Me.lbl_acc.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_acc.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_acc.ForeColor = System.Drawing.Color.Black
         Me.lbl_acc.Location = New System.Drawing.Point(15, 39)
         Me.lbl_acc.Name = "lbl_acc"
         Me.lbl_acc.Size = New System.Drawing.Size(88, 21)
@@ -251,7 +251,7 @@ Partial Class sharecap_collection
         Me.lbl_accountname.AutoSize = True
         Me.lbl_accountname.BackColor = System.Drawing.Color.Transparent
         Me.lbl_accountname.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_accountname.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_accountname.ForeColor = System.Drawing.Color.Black
         Me.lbl_accountname.Location = New System.Drawing.Point(13, 9)
         Me.lbl_accountname.Name = "lbl_accountname"
         Me.lbl_accountname.Size = New System.Drawing.Size(148, 30)
@@ -263,7 +263,7 @@ Partial Class sharecap_collection
         Me.lbl_balance.AutoSize = True
         Me.lbl_balance.BackColor = System.Drawing.Color.Transparent
         Me.lbl_balance.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_balance.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lbl_balance.ForeColor = System.Drawing.Color.Black
         Me.lbl_balance.Location = New System.Drawing.Point(177, 65)
         Me.lbl_balance.Name = "lbl_balance"
         Me.lbl_balance.Size = New System.Drawing.Size(64, 21)

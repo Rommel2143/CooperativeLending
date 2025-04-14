@@ -3,12 +3,22 @@ Public Class member_accounts
     Private Sub member_accounts_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-    Public Sub LoadData(query As String)
+    ' Load and display data in DataGridView based on search query
+    Public Sub LoadData(queryCondition As String)
         Try
-            ' Load the data into the DataGridView
-            reload("SELECT mp.account_no AS 'Account no.', CONCAT(mp.lastname, ', ', mp.firstname, ' ', mp.middlename) AS Fullname, DATE_FORMAT(mp.birthdate, '%M %d, %Y') AS Birthday, TIMESTAMPDIFF(Year, mp.birthdate, CURDATE()) AS Age, mp.contact1 AS 'Primary Contact',place_birth AS 'Address' FROM `member_profile` mp WHERE " & query, datagrid1)
+            Dim query As String = "
+            SELECT 
+                mp.account_no AS 'Account no.',
+                CONCAT(mp.lastname, ', ', mp.firstname, ' ', mp.middlename) AS Fullname,
+                DATE_FORMAT(mp.birthdate, '%M %d, %Y') AS Birthday,
+                TIMESTAMPDIFF(YEAR, mp.birthdate, CURDATE()) AS Age,
+                mp.contact1 AS 'Primary Contact',
+                mp.place_birth AS 'Address'
+            FROM member_profile mp
+            WHERE " & queryCondition & "
+            ORDER BY mp.lastname ASC"
 
-
+            reload(query, datagrid1)
 
         Catch ex As Exception
             show_error("Error: " & ex.Message)
@@ -17,21 +27,22 @@ Public Class member_accounts
         End Try
     End Sub
 
+    ' Perform live search as user types
+    Private Sub txt_search_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged
+        Dim searchText As String = txt_search.Text.Trim()
 
-
-
-    Private Sub txt_amount_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged
-
-
-        If txt_search.Text = "" Then
-                LoadData("1")
-            Else
-
-                LoadData(" account_no REGEXP '" & txt_search.Text & "' or lastname REGEXP '" & txt_search.Text & "'")
-
-            End If
-
+        If searchText = "" Then
+            LoadData("1") ' Load all data
+        Else
+            ' Make the search case-insensitive
+            Dim condition As String = "
+            LOWER(mp.account_no) REGEXP LOWER('" & searchText & "') OR
+            LOWER(mp.lastname) REGEXP LOWER('" & searchText & "') OR
+            LOWER(CONCAT(mp.lastname, ' ', mp.firstname)) REGEXP LOWER('" & searchText & "')"
+            LoadData(condition)
+        End If
     End Sub
+
 
     Private Sub datagrid1_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles datagrid1.CellMouseClick
         Try

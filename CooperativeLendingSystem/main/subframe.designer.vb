@@ -40,6 +40,7 @@ Partial Class subframe
         Me.UpdateUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.CollectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.btnmenu_strip.SuspendLayout()
@@ -113,14 +114,14 @@ Partial Class subframe
         'btnmenu_strip
         '
         Me.btnmenu_strip.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnmenu_strip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MembersToolStripMenuItem})
+        Me.btnmenu_strip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MembersToolStripMenuItem, Me.CollectionToolStripMenuItem})
         Me.btnmenu_strip.Name = "ContextMenuStrip1"
-        Me.btnmenu_strip.Size = New System.Drawing.Size(181, 52)
+        Me.btnmenu_strip.Size = New System.Drawing.Size(150, 56)
         '
         'MembersToolStripMenuItem
         '
         Me.MembersToolStripMenuItem.Name = "MembersToolStripMenuItem"
-        Me.MembersToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.MembersToolStripMenuItem.Size = New System.Drawing.Size(149, 26)
         Me.MembersToolStripMenuItem.Text = "Members"
         '
         'btn_profile
@@ -198,6 +199,12 @@ Partial Class subframe
         Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(162, 30)
         Me.LogoutToolStripMenuItem.Text = "Logout"
         '
+        'CollectionToolStripMenuItem
+        '
+        Me.CollectionToolStripMenuItem.Name = "CollectionToolStripMenuItem"
+        Me.CollectionToolStripMenuItem.Size = New System.Drawing.Size(149, 26)
+        Me.CollectionToolStripMenuItem.Text = "Collection"
+        '
         'subframe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -234,4 +241,5 @@ Partial Class subframe
     Friend WithEvents MembersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddUserToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UpdateUserToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CollectionToolStripMenuItem As ToolStripMenuItem
 End Class
