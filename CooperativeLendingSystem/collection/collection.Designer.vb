@@ -33,7 +33,7 @@ Partial Class collection
         Me.txt_amountdeposit = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt_password = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.cmb_type = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.datagrid1 = New Guna.UI2.WinForms.Guna2DataGridView()
@@ -53,7 +53,7 @@ Partial Class collection
         Me.cmb_deptrans.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.cmb_deptrans.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmb_deptrans.ItemHeight = 30
-        Me.cmb_deptrans.Items.AddRange(New Object() {"Cash Deposit", "", "", "Check Deposit", "", "", "Initial Deposit", "", "", "Credit Memo", "", "", "Interest", "", "", "Patronage Refund", "Debit Memo", "", "", "Closed Account"})
+        Me.cmb_deptrans.Items.AddRange(New Object() {"Cash Deposit", "", "", "Check Deposit", "", "", "Initial Deposit", "", "", "Credit Memo", "", "", "Interest", "", "", "Patronage Refund"})
         Me.cmb_deptrans.Location = New System.Drawing.Point(34, 270)
         Me.cmb_deptrans.Name = "cmb_deptrans"
         Me.cmb_deptrans.Size = New System.Drawing.Size(157, 36)
@@ -146,24 +146,24 @@ Partial Class collection
         Me.txt_password.TabIndex = 59
         Me.txt_password.UseSystemPasswordChar = True
         '
-        'Guna2ComboBox1
+        'cmb_type
         '
-        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.BorderColor = System.Drawing.Color.Black
-        Me.Guna2ComboBox1.BorderRadius = 3
-        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Items.AddRange(New Object() {"Loan", "Savings", "Share Capital"})
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(34, 192)
-        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(157, 36)
-        Me.Guna2ComboBox1.StartIndex = 0
-        Me.Guna2ComboBox1.TabIndex = 63
+        Me.cmb_type.BackColor = System.Drawing.Color.Transparent
+        Me.cmb_type.BorderColor = System.Drawing.Color.Black
+        Me.cmb_type.BorderRadius = 3
+        Me.cmb_type.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_type.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmb_type.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmb_type.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.cmb_type.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmb_type.ItemHeight = 30
+        Me.cmb_type.Items.AddRange(New Object() {"Loan", "Savings", "Share Capital"})
+        Me.cmb_type.Location = New System.Drawing.Point(34, 192)
+        Me.cmb_type.Name = "cmb_type"
+        Me.cmb_type.Size = New System.Drawing.Size(157, 36)
+        Me.cmb_type.StartIndex = 0
+        Me.cmb_type.TabIndex = 63
         '
         'Label1
         '
@@ -179,7 +179,7 @@ Partial Class collection
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Guna2ComboBox1)
+        Me.Panel1.Controls.Add(Me.cmb_type)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.cmb_deptrans)
         Me.Panel1.Controls.Add(Me.Label7)
@@ -285,7 +285,7 @@ Partial Class collection
     Friend WithEvents txt_amountdeposit As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents txt_password As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents cmb_type As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents datagrid1 As Guna.UI2.WinForms.Guna2DataGridView

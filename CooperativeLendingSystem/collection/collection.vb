@@ -5,45 +5,48 @@ Public Class collection
 
             If user_Password = txt_password.Text Then
 
-                Dim trans As String = Nothing
+                Dim transid As String = Nothing
                 Select Case cmb_deptrans.Text
                     Case "Cash Deposit"
-                        trans = "CD"
+                        transid = "CD"
                     Case "Check Deposit"
-                        trans = "CHKD"
+                        transid = "CHKD"
                     Case "Initial Deposit"
-                        trans = "ID"
+                        transid = "ID"
                     Case "Credit Memo"
-                        trans = "CM"
+                        transid = "CM"
                     Case "Interest"
-                        trans = "INT"
+                        transid = "INT"
                     Case "Patronage Refund"
-                        trans = "IPR"
-                    Case "Debit Memo"
-                        trans = "DMEMO"
-                    Case "Closed Account"
-                        trans = "CA"
+                        transid = "IPR"
+
                 End Select
+
+                Dim transtype As String = Nothing
+                Select Case cmb_type.Text
+                    Case "Loan"
+                        transtype = "L"
+                    Case "Savings"
+                        transtype = "S"
+                    Case "Share Capital"
+                        transtype = "SC"
+                End Select
+
+
 
                 con.Close()
                 con.Open()
 
                 ' Use parameterized query
-                Dim cmdinsert As New MySqlCommand("INSERT INTO savings (`account_no`, `amount`, `date_transac`, `time`,`status`, `teller`)
-                                                                VALUES ('" & client_accountno & "',
-                                                                        @amount,
-                                                                       CURDATE(),
-                                                                       '" & Date.Now.ToString("HH:mm") & "',
-                                                                       '" & trans & "',
-                                                                       '" & user_IDno & "')", con)
+                Dim cmdinsert As New MySqlCommand("INSERT INTO savings (`id`, `account_no`, `amount`, `date_transac`, `time`, `type`, `transaction_id`, `teller`)
+                                   VALUES (NULL, '" & client_accountno & "', '" & Convert.ToDecimal(txt_amountdeposit.Text) & "', CURDATE(), CURTIME(), '" & transtype & "', '" & transid & "', '" & user_IDno & "')", con)
 
-                ' Add parameters
-                cmdinsert.Parameters.AddWithValue("@amount", Convert.ToDecimal(txt_amountdeposit.Text))
+
                 cmdinsert.ExecuteNonQuery()
                 MessageBox.Show("Record saved successfully.")
                 txt_amountdeposit.Clear()
                 txt_password.Clear()
-                reload("SELECT SELECT `id`, `account_no`, `amount`, `tag`, `transaction_id`, `datein` FROM `collection` WHERE datein =CURDATE()", datagrid1)
+                reload("SELECT `id`, `account_no`, `amount`, `type`, `transaction_id`, `date_transac` FROM `collection` WHERE date_transac =CURDATE()", datagrid1)
             Else
                 show_error("Invalid Password!")
             End If
@@ -57,6 +60,7 @@ Public Class collection
 
 
     Private Sub collection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        reload("SELECT SELECT `id`, `account_no`, `amount`, `tag`, `transaction_id`, `datein` FROM `collection` WHERE datein =CURDATE()", datagrid1)
+        reload("SELECT `id`, `account_no`, `amount`, `type`, `transaction_id`, `date_transac` FROM `collection` WHERE date_transac =CURDATE()", datagrid1)
     End Sub
+
 End Class
