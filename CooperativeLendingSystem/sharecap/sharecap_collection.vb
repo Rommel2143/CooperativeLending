@@ -183,4 +183,8 @@ Public Class sharecap_collection
     Private Sub txt_amountdeposit_TextChanged(sender As Object, e As EventArgs) Handles txt_amountdeposit.TextChanged
 
     End Sub
+
+    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
+
+    End Sub
 End Class

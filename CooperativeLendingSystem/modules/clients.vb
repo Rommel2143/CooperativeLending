@@ -119,7 +119,7 @@ or status='INT'
 THEN `amount` ELSE 0 END) - 
 
             SUM(CASE WHEN 
-or status = 'CA' 
+status = 'CA' 
 or status='DMEMO'
 or status='CHKWID'
 or status='CSHWIT'
@@ -143,7 +143,7 @@ THEN `amount` ELSE 0 END) AS balance
             End If
         Catch ex As Exception
             ' Handle any errors that occur during the execution
-            MessageBox.Show("Error: " & ex.Message)
+            MessageBox.Show("Error : " & ex.Message)
             Return 0 ' Return 0 in case of an error
         Finally
             con.Close() ' Ensure the connection is closed
