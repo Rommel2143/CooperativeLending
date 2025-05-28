@@ -63,9 +63,9 @@ Partial Class savings
         'tab1
         '
         Me.tab1.Alignment = System.Windows.Forms.TabAlignment.Left
+        Me.tab1.Controls.Add(Me.TabPage2)
         Me.tab1.Controls.Add(Me.TabPage1)
         Me.tab1.Controls.Add(Me.TabPage3)
-        Me.tab1.Controls.Add(Me.TabPage2)
         Me.tab1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tab1.ItemSize = New System.Drawing.Size(180, 40)
         Me.tab1.Location = New System.Drawing.Point(0, 0)
@@ -134,7 +134,7 @@ Partial Class savings
         Me.datagrid1.DefaultCellStyle = DataGridViewCellStyle3
         Me.datagrid1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.datagrid1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.datagrid1.Location = New System.Drawing.Point(3, 169)
+        Me.datagrid1.Location = New System.Drawing.Point(3, 174)
         Me.datagrid1.Name = "datagrid1"
         Me.datagrid1.ReadOnly = True
         Me.datagrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -148,7 +148,7 @@ Partial Class savings
         Me.datagrid1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.datagrid1.RowHeadersVisible = False
         Me.datagrid1.RowTemplate.Height = 42
-        Me.datagrid1.Size = New System.Drawing.Size(858, 488)
+        Me.datagrid1.Size = New System.Drawing.Size(858, 483)
         Me.datagrid1.TabIndex = 2
         Me.datagrid1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer))
         Me.datagrid1.ThemeStyle.AlternatingRowsStyle.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -180,7 +180,7 @@ Partial Class savings
         Me.Guna2Panel1.FillColor = System.Drawing.Color.White
         Me.Guna2Panel1.Location = New System.Drawing.Point(3, 3)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(858, 166)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(858, 171)
         Me.Guna2Panel1.TabIndex = 3
         '
         'export_excel

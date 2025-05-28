@@ -118,6 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txt_passwithdraw.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAE
+        uQAABLkBEeHNJwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMaSURBVFhHrVdJ
+        axRBFA4R/QNuFxVcQCUasKsnAdGjqBcXMII3PYuoMZ68BEQ8CKKoSarH5OBCzGhIFBRi0JjtpF4kqGg8
+        RHADA8JoZsZJ8snrmra7X9V0z5IPPijqfW/pruqq1zU1FaAphUWJG1htJVFPpDHNcd2CQkisFxJnRAdG
+        hERWSIAxa0sMiw40J9qwjvtXDCGxSUikDAkjaUkM0tvh8UpGXQpLLIlrQmKWBy+DeSFxlWLx+JFouI6l
+        wsGQIWBldDDWmMRKnseIbV1YLiQmtSDV86OQWMbzhSAkFpfy5Ns7gXPPgLtvFGlMc1xn4GjkchTWnDuF
+        eKwf+J6Ghm9p4GifrtfYgSs8r4vCbqdNozsVePAe8DunEuZmgddfFf/Oqbl0DjjQrfsxziYc1PH8NbbE
+        I4M4xMFPKtHPP0BTyp8/fB+YnlG2gUndT6OD/lBy6yY2aCLGhANk8yrJ+WHdfmFE2TJ5peV2ztBhJRy0
+        cAHnrlsqAeHIA91Ocx5Iy+2ctsRpvwB1vGqiIHff9hMc6tHtNOeBtNzOaUm8UNlbUSskMlzAudAFCIkZ
+        yk27f43BGOL+buDSuJ9AvlJrHiTNeSDtvvivAY1JrKICtnJDkCee+J9ZOaDP9PhjPV6Qdju2xBYw/pmH
+        9kFngncumDA2pcczFRC5BBM/eFiFvnfuK3T58D23KpAvjxekuwRxm7BYAXsCG23vHW5ViClAbUKC28no
+        gsgC6E7wNDQ2IbIAB0PBc6BZE8QUMPXL19DYhJgCTvoFqH5PF0UUQLvc09DYhKgCtL6RLgguiipgbh7Y
+        0Qns7FJjE4oVYEv0hpIT7DZsNF3HL7/wsD4+TCsWA/nyeHQdW0ls5vldUAPJHS6O8rClg05IHs+SuMzz
+        /ofbkkk8505nnwI9E0Dv29JI2pYBPXlsS0YoNKXUQHLnahnflHpw23LDm6iCo/XtWMHzRIJeFTWQpo1Z
+        BvO05rS0PH7JKHwd9Gs2b0hQlPRrRhcdj1cx6OCgNqrw32C6OzJksyRONSSxlvsvLFpRSzcZXadE91bz
+        LpYy8Q8CWTlBZSza8gAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="export_excel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAE6
@@ -986,26 +1006,6 @@
 </value>
   </data>
   <data name="txt_password.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAE
-        uQAABLkBEeHNJwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMaSURBVFhHrVdJ
-        axRBFA4R/QNuFxVcQCUasKsnAdGjqBcXMII3PYuoMZ68BEQ8CKKoSarH5OBCzGhIFBRi0JjtpF4kqGg8
-        RHADA8JoZsZJ8snrmra7X9V0z5IPPijqfW/pruqq1zU1FaAphUWJG1htJVFPpDHNcd2CQkisFxJnRAdG
-        hERWSIAxa0sMiw40J9qwjvtXDCGxSUikDAkjaUkM0tvh8UpGXQpLLIlrQmKWBy+DeSFxlWLx+JFouI6l
-        wsGQIWBldDDWmMRKnseIbV1YLiQmtSDV86OQWMbzhSAkFpfy5Ns7gXPPgLtvFGlMc1xn4GjkchTWnDuF
-        eKwf+J6Ghm9p4GifrtfYgSs8r4vCbqdNozsVePAe8DunEuZmgddfFf/Oqbl0DjjQrfsxziYc1PH8NbbE
-        I4M4xMFPKtHPP0BTyp8/fB+YnlG2gUndT6OD/lBy6yY2aCLGhANk8yrJ+WHdfmFE2TJ5peV2ztBhJRy0
-        cAHnrlsqAeHIA91Ocx5Iy+2ctsRpvwB1vGqiIHff9hMc6tHtNOeBtNzOaUm8UNlbUSskMlzAudAFCIkZ
-        yk27f43BGOL+buDSuJ9AvlJrHiTNeSDtvvivAY1JrKICtnJDkCee+J9ZOaDP9PhjPV6Qdju2xBYw/pmH
-        9kFngncumDA2pcczFRC5BBM/eFiFvnfuK3T58D23KpAvjxekuwRxm7BYAXsCG23vHW5ViClAbUKC28no
-        gsgC6E7wNDQ2IbIAB0PBc6BZE8QUMPXL19DYhJgCTvoFqH5PF0UUQLvc09DYhKgCtL6RLgguiipgbh7Y
-        0Qns7FJjE4oVYEv0hpIT7DZsNF3HL7/wsD4+TCsWA/nyeHQdW0ls5vldUAPJHS6O8rClg05IHs+SuMzz
-        /ofbkkk8505nnwI9E0Dv29JI2pYBPXlsS0YoNKXUQHLnahnflHpw23LDm6iCo/XtWMHzRIJeFTWQpo1Z
-        BvO05rS0PH7JKHwd9Gs2b0hQlPRrRhcdj1cx6OCgNqrw32C6OzJksyRONSSxlvsvLFpRSzcZXadE91bz
-        LpYy8Q8CWTlBZSza8gAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="txt_passwithdraw.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAE
         uQAABLkBEeHNJwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMaSURBVFhHrVdJ
